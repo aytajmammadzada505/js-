@@ -1,0 +1,162 @@
+//task 1
+let numbers = []
+numbers.push(10, 20, 30);
+console.log(numbers);
+
+
+//task 2
+let number = [5, 10, 15, 20];
+number.pop();
+console.log(number);
+
+//task 3
+let fruits = ["Banan", "Alma"];
+fruits.unshift("Gilas");
+console.log(fruits);
+
+//task 4
+let colors = ["Qırmızı", "Yaşıl", "Mavi"];
+colors.shift();
+console.log(colors);
+
+//task 5
+let num = [1, 2];
+let numb = [3, 4];
+fullArray = num.concat(numb);
+console.log(fullArray);
+
+//task 6
+let letters = ["a", "b", "c", "d", "e"];
+let sliceletters = letters.slice(1, 3);
+console.log(sliceletters);
+
+//task 7
+let Number = [10, 20, 50, 60];
+Number.splice(2, 0, 30, 40);
+console.log(Number);
+
+//task 8
+let lang = ["JavaScript", "Python", "C++"];
+lang.indexOf("Python");
+console.log(lang.indexOf("Python"));
+
+//task 9
+let nums = [5, 12, 8, 130, 44];
+nums.includes(8);
+console.log(nums.includes(8));
+
+//task 10
+let languages = ["HTML", "CSS", "JS"];
+languages.join("-");
+console.log(languages.join("-"));
+
+//task 11
+let reverseNums = [1, 2, 3, 4, 5];
+reverseNums.reverse();
+console.log(reverseNums);
+
+//task 12
+let sortNums = [40, 100, 1, 5, 25];
+sortNums.sort((a, b) => a - b);
+console.log(sortNums);
+
+//task 13
+let mapNums = [1, 2, 3, 4];
+let doubledNums = mapNums.map(num => num * 2);
+console.log(doubledNums);
+
+//task 14
+let filterNums = [10, 15, 20, 25, 30];
+let fileredNums = filterNums.filter(num => num > 20);
+console.log(fileredNums);
+
+//task 15
+let findNums = [5, 12, 8, 130, 44];
+let foundNum = findNums.find(num => num > 10);
+console.log(foundNum);
+
+
+//task 16
+let score = [45, 60, 75, 90];
+let passedScores = score.findIndex(num => num > 50);
+console.log(passedScores);
+
+//task 17
+let reduceNums = [5, 10, 15, 20];
+let total = reduceNums.reduce((acc, num) => acc + num, 0);
+console.log(total);
+
+//task 18
+let lastNums = [1, 2, 3, 2, 1, 2];
+let lastindex = lastNums.lastIndexOf(2);
+console.log(lastindex);
+
+//task 19
+let names = ["ali", "aysel", "mammad"];
+let upperNames = names.map(name => name.toUpperCase());
+console.log(upperNames);
+
+//task 20
+const objects = [
+  { name: "A", age: 16 },
+  { name: "B", age: 22 },
+  { name: "C", age: 19 }
+]
+const filteredObjects = objects.filter(obj => obj.age >= 18);
+console.log(filteredObjects);
+
+//task 21
+const fruit = ["Alma", "Banan", "Gilas", "Qarpız"];
+const slice = fruit.splice(1, 2);
+console.log(slice);
+
+//task 22
+let points = [15, 40];
+let point = [10, 30];
+fullpoints = points.concat(point);
+fullpoints.sort((a, b) => b - a);
+console.log(fullpoints);
+
+//task 23
+let rsult = [2, 3, 4];
+let totals = rsult.reduce((acc, num) => acc * num, 1);
+console.log(totals);
+
+
+//task 24
+let frt = ["apple", "banana", "cherry", "date"];
+let Fruits = frt.filter(fruit => fruit.includes("a"));
+console.log(Fruits);
+
+//task 25
+const products = [
+  { name: "Körpük", price: 100 },
+  { name: "Ayaqqabı", price: 200 }];
+
+let product = products.map(item => item.price * 1.18);
+console.log(product);
+
+//task 26
+const Objects = [{ id: 101, title: "Xəbər 1" }, { id: 102, title: "Xəbər 2" }];
+let object = Objects.find(item => item.id === 102);
+console.log(object);
+
+//task 27
+const Letters = "JavaScript";
+const Letter = Letters.split("").reverse().join("");
+console.log(Letter);
+
+//task 28
+const bignum = [10, 20, 30, 40, 50, 60];
+const Num = bignum.slice(-3);
+console.log(Num);
+
+//task 29
+const numreduce = [12, 45, 2, 89, 34];
+const Nums = numreduce.reduce((acc, curr) => Math.max(acc,curr));
+console.log(Nums);
+
+//task 30
+const items = ["kitab", "qələm", "kompüter", "ev", "proqramlaşdırma"];
+const filteritems = items.filter(item => item.length > 5);
+console.log(filteritems);
