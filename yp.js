@@ -1,4 +1,4 @@
-/*/task 1
+/task 1
 function oyunhesabi(kill, death) {
   let point = kill * 100 - death * 50;
   return point;
@@ -17,7 +17,7 @@ function endirimHesabla(qiymet, promoKod) {
 console.log(endirimHesabla(50, "SUPER10"));
 
 //task 3
-/*function lvlKecdin(toplananXal, lazimOlanXal) {
+function lvlKecdin(toplananXal, lazimOlanXal) {
   if (toplananXal >= lazimOlanXal) {
     console.log("Təbriklər, növbəti mərhələ açıldı!");
   } else {
@@ -39,7 +39,7 @@ function calculateOrderTotal(price, promoCode) {
 console.log(calculateOrderTotal(100, "SAVE20"));
 console.log(calculateOrderTotal(50, "FLAT10"));
 
-/*function registerUser(fullName, age) {
+function registerUser(fullName, age) {
   if (age < 18) {
     return "Qeydiyyat üçün yaşınız minimum 18 olmalıdır.";
   }
