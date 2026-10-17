@@ -362,3 +362,33 @@ const person = {
 let field = "name";
 console.log(person.job - title); // (-) isaresi riyazi hesablama kimi qebul edilir, (person["job-title"]) 
 console.log(person.field); //deyisenin deyerini istifade etmir, bracket notation istifade olunmalidir (person[field])
+
+
+
+
+
+
+//DOM tasks 
+//task 1 (spread operator)
+const groupA = ["Ali", "Aysel", "Murad"];
+const groupBStudents = ["Leyla", "Orxan", "Nigar"];
+
+const allStudent = ["Umid", ...groupA, ...groupBStudents];
+
+console.log(allStudent);
+
+
+
+//task 2 (destructuring)
+
+const student = {
+    name: "Ali",
+    age: 20,
+    city: "Baku",
+    profession: "Developer",
+    skills: ["HTML", "CSS", "JavaScript"]
+};
+
+const { name, age, profession } = student;
+const [skill1, skill2] = student.skills;
+console.log(name, age, profession,skill1,skill2);
